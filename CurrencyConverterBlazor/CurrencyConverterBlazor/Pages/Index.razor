@@ -64,7 +64,7 @@
 </MudGrid>
 
 @code {
-    private const bool ResetValueOnEmptyText = true;
+    private bool ResetValueOnEmptyText = true;
     private bool _processing;
     private string _currencyFrom;
     private string _currencyTo;
@@ -104,8 +104,8 @@
     private async Task<IEnumerable<string>> GetCurrencies(string value)
     {
         Result = null;
-        await Task.Delay(5);
-        return string.IsNullOrEmpty(value) ? Currency : Currency.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase));
+        await Task.Delay(50);
+        return await Task.FromResult(string.IsNullOrEmpty(value) ? Currency : Currency.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase)));
     }
     
     protected override async Task OnInitializedAsync()
