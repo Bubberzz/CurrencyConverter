@@ -1,4 +1,4 @@
-# CurrencyConverter
+# Currency Converter
 A full-stack currency converter using .NET 5, Web API and Blazor
 
 
