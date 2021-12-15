@@ -4,6 +4,8 @@
         <TargetFramework>net5.0</TargetFramework>
 
         <IsPackable>false</IsPackable>
+
+        <RootNamespace>CurrencyConverter.Tests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -22,7 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\CurrencyConverter\CurrencyConverter.csproj" />
+      <ProjectReference Include="..\CurrencyConverterAPI\CurrencyConverterAPI.csproj" />
     </ItemGroup>
 
 </Project>

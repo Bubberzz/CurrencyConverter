@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter", "CurrencyConverter\CurrencyConverter.csproj", "{D034B820-EC29-45DB-BED8-A09202DAFDF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverterAPI", "CurrencyConverterAPI\CurrencyConverterAPI.csproj", "{D034B820-EC29-45DB-BED8-A09202DAFDF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Tests", "CurrencyConverter.Tests\CurrencyConverter.Tests.csproj", "{0DBB5E05-4B78-48FB-8AE8-D90EA7DE1948}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverterAPI.Tests", "CurrencyConverterAPI.Tests\CurrencyConverterAPI.Tests.csproj", "{0DBB5E05-4B78-48FB-8AE8-D90EA7DE1948}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,20 +5,7 @@
     <projectFile profileName="CurrencyConverter">CurrencyConverter/CurrencyConverter.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="662d212f-8a20-423e-ad9b-64b26c49e33b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/IntegrationTests/GetConversionEndpointShould.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/IntegrationTests/GetCurrenciesEndpointShould.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/CurrencyServiceShould.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter.Tests/CurrencyConverter.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/CurrencyConverter.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/ConversionServiceShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/ConversionServiceShould.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/ConvertControllerShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/ConvertControllerShould.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter/Context/ExchangeRateDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/Context/ExchangeRateDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter/Controllers/ConvertController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/Controllers/ConvertController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter/CurrencyConverter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/CurrencyConverter.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/Startup.cs" afterDir="false" />
-    </list>
+    <list default="true" id="662d212f-8a20-423e-ad9b-64b26c49e33b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,8 +35,42 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.CurrencyConverter">
+    <configuration name="Publish CurrencyConverter to Azure" type="AzureDotNetWebAppPublish" factoryName="Azure Web App">
+      <option name="AZURE_WEB_APP_PROJECT" value="$PROJECT_DIR$/CurrencyConverter/CurrencyConverter.csproj" />
+      <option name="AZURE_WEB_APP_SUBSCRIPTION_ID" value="a9419089-f51f-484a-a498-d24adbd62fd8" />
+      <option name="AZURE_WEB_APP_IS_CREATE_APP" value="0" />
+      <option name="AZURE_WEB_APP_ID" value="/subscriptions/a9419089-f51f-484a-a498-d24adbd62fd8/resourceGroups/rg-cc/providers/Microsoft.Web/sites/webapp-currencyconverter" />
+      <option name="AZURE_WEB_APP_NAME" value="" />
+      <option name="AZURE_WEB_APP_IS_CREATE_RESOURCE_GROUP" value="0" />
+      <option name="AZURE_WEB_APP_RESOURCE_GROUP_NAME" value="" />
+      <option name="AZURE_WEB_APP_OPERATING_SYSTEM" value="WINDOWS" />
+      <option name="AZURE_WEB_APP_IS_CREATE_APP_SERVICE_PLAN" value="0" />
+      <option name="AZURE_WEB_APP_SERVICE_PLAN_ID" value="/subscriptions/a9419089-f51f-484a-a498-d24adbd62fd8/resourceGroups/IMDbChatbot20210709011057ResourceGroup/providers/Microsoft.Web/serverfarms/IMDb-Chatbot" />
+      <option name="AZURE_WEB_APP_SERVICE_PLAN_NAME" value="" />
+      <option name="AZURE_WEB_APP_LOCATION" value="eastus" />
+      <option name="AZURE_WEB_APP_PRICING_TIER" value="S1" />
+      <option name="AZURE_WEB_APP_NET_FRAMEWORK" value="4.7" />
+      <option name="AZURE_WEB_APP_NET_CORE_RUNTIME" value="DOTNETCORE 2.1" />
+      <option name="AZURE_WEB_APP_IS_DEPLOY_TO_SLOT" value="0" />
+      <option name="AZURE_WEB_APP_SLOT_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_SUBSCRIPTION_ID" value="a9419089-f51f-484a-a498-d24adbd62fd8" />
+      <option name="AZURE_SQL_DATABASE_IS_ENABLED" value="0" />
+      <option name="AZURE_SQL_DATABASE_CONNECTION_STRING_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE" value="0" />
+      <option name="AZURE_SQL_DATABASE_ID" value="" />
+      <option name="AZURE_SQL_DATABASE_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE_RESOURCE_GROUP" value="0" />
+      <option name="AZURE_SQL_DATABASE_RESOURCE_GROUP_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_IS_CREATE_SQL_SERVER" value="0" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_ID" value="" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_NAME" value="" />
+      <option name="AZURE_SQL_DATABASE_SQL_SERVER_ADMIN_LOGIN" value="N/A" />
+      <option name="AZURE_SQL_DATABASE_LOCATION" value="eastus" />
+      <option name="AZURE_SQL_DATABASE_COLLATION" value="SQL_Latin1_General_CP1_CI_AS" />
+      <method v="2" />
+    </configuration>
     <configuration name="CurrencyConverter" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CurrencyConverter/CurrencyConverter.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CurrencyConverterAPI/CurrencyConverterAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net5.0" />
       <option name="LAUNCH_PROFILE_NAME" value="CurrencyConverter" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -64,7 +85,7 @@
       </method>
     </configuration>
     <configuration name="CurrencyConverter: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CurrencyConverter/CurrencyConverter.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CurrencyConverterAPI/CurrencyConverterAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net5.0" />
       <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -89,7 +110,7 @@
       <updated>1639526805863</updated>
       <workItem from="1639526819391" duration="2068000" />
       <workItem from="1639528940382" duration="3091000" />
-      <workItem from="1639532074663" duration="1058000" />
+      <workItem from="1639532074663" duration="1217000" />
     </task>
     <servers />
   </component>
