@@ -5,7 +5,43 @@
     <projectFile profileName="CurrencyConverter">CurrencyConverter/CurrencyConverter.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="662d212f-8a20-423e-ad9b-64b26c49e33b" name="Changes" comment="" />
+    <list default="true" id="662d212f-8a20-423e-ad9b-64b26c49e33b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/.idea/.idea.CurrencyConverterBlazor/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/.idea/.idea.CurrencyConverterBlazor/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/.idea/.idea.CurrencyConverterBlazor/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/.idea/.idea.CurrencyConverterBlazor/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/App.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/CurrencyConverterBlazor.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/Pages/Error.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/Pages/Error.cshtml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/Pages/Index.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/Pages/_Host.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/Shared/MainLayout.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/Shared/MainLayout.razor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/Shared/NavMenu.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/Shared/NavMenu.razor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/Startup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/_Imports.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/css/bootstrap/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/css/bootstrap/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/css/open-iconic/FONT-LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/css/open-iconic/ICON-LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/css/open-iconic/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/css/open-iconic/font/fonts/open-iconic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/css/open-iconic/font/fonts/open-iconic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/css/open-iconic/font/fonts/open-iconic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/css/open-iconic/font/fonts/open-iconic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/css/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CurrencyConverterBlazor/CurrencyConverterBlazor/wwwroot/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +49,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/IntegrationTests/GetCurrenciesEndpointShould.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/IntegrationTests/GetConversionEndpointShould.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/UnitTests/ConversionServiceShould.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/UnitTests/ConvertControllerShould.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/SetupHelper/GenerateData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/UnitTests/CurrencyServiceShould.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -110,7 +154,7 @@
       <updated>1639526805863</updated>
       <workItem from="1639526819391" duration="2068000" />
       <workItem from="1639528940382" duration="3091000" />
-      <workItem from="1639532074663" duration="1217000" />
+      <workItem from="1639532074663" duration="1908000" />
     </task>
     <servers />
   </component>
@@ -139,7 +183,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/CurrencyConverter.Tests/IntegrationTests/GetCurrenciesEndpointShould.cs</url>
+          <url>file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/IntegrationTests/GetCurrenciesEndpointShould.cs</url>
           <line>20</line>
           <properties documentPath="C:\Users\stanb\Documents\repos\CurrencyConverter\CurrencyConverter\CurrencyConverter.Tests\IntegrationTests\GetCurrenciesEndpointShould.cs" initialLine="20" containingFunctionPresentation="method 'GetCurrenciesEndpointShould_ReturnSuccess_AndCorrectContentType'">
             <startOffsets>
