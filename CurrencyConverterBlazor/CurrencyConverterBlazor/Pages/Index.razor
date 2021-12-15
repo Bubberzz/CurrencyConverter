@@ -1,7 +1,124 @@
 @page "/"
+@using Newtonsoft.Json
+@using Microsoft.Extensions.Configuration
+@inject HttpClient _httpClient
+@inject IConfiguration _configuration
 
-<h1>Hello, world!</h1>
+<h1>Currency Converter</h1>
+<br/>
+<MudGrid>
+    <MudItem xs="12" md="3">
+        <MudAutocomplete
+            T="String"
+            Label="Convert From" @bind-Value="_currencyFrom"
+            SearchFunc="@GetCurrencies"
+            ResetValueOnEmptyText="@ResetValueOnEmptyText"/>
+    </MudItem>
 
-Welcome to your new app.
+    <MudItem xs="12" md="3">
+        <MudAutocomplete
+            T="String"
+            Label="Convert To"
+            @bind-Value="_currencyTo"
+            SearchFunc="@GetCurrencies"
+            ResetValueOnEmptyText="@ResetValueOnEmptyText"/>
+    </MudItem>
 
-<SurveyPrompt Title="How is Blazor working for you?"/>
+    <MudItem xs="12" md="3">
+        <MudTextField
+            @bind-Value="Amount"
+            Label="Amount"
+            Variant="Variant.Text">
+        </MudTextField>
+    </MudItem>
+
+    <MudItem xs="12" md="3" Class="d-flex align-end py-2 px-1">
+        <MudButton
+            Disabled="@_processing"
+            OnClick="Calculate"
+            Variant="Variant.Filled"
+            Color="Color.Primary">
+
+            @if (_processing)
+            {
+                <MudProgressCircular
+                    Class="ms-n1"
+                    Size="Size.Small"
+                    Indeterminate="true"/>
+                <MudText Class="ms-2">Calculating</MudText>
+            }
+            else
+            {
+                <MudText>Calculate</MudText>
+            }
+        </MudButton>
+    </MudItem>
+
+    <MudItem xs="12" md="3">
+        <MudTextField
+            @bind-Value="Result"
+            Label="Result"
+            ReadOnly="true"
+            Variant="Variant.Outlined"/>
+    </MudItem>
+</MudGrid>
+
+@code {
+    private const bool ResetValueOnEmptyText = true;
+    private bool _processing;
+    private string _currencyFrom;
+    private string _currencyTo;
+    private string Result { get; set; }
+    private int Amount { get; set; }
+    private IEnumerable<string> Currency { get; set; }
+
+    async Task Calculate()
+    {
+        Result = null;
+        _processing = true;
+        await Task.Delay(2000);
+
+        try
+        {
+            if (_currencyFrom is null || _currencyTo is null)
+            {
+                Result = "Please select a currency";
+                _processing = false;
+                return;
+            }
+            
+            var responseBody = await _httpClient.GetStringAsync(
+                _configuration.GetValue<string>("CurrencyConversionAPIProd") +
+                $"convert?currencyFrom={_currencyFrom}&currencyTo={_currencyTo}&amount={Amount}");
+
+            Result = $"{_currencyTo} {responseBody}";
+        }
+        catch (Exception ex)
+        {
+            Result = $"There was an error converting currencies: {ex.Message}";
+        }
+
+        _processing = false;
+    }
+
+    private async Task<IEnumerable<string>> GetCurrencies(string value)
+    {
+        Result = null;
+        await Task.Delay(5);
+        return string.IsNullOrEmpty(value) ? Currency : Currency.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase));
+    }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var responseBody = await _httpClient.GetStringAsync(_configuration.GetValue<string>("CurrencyConversionAPIProd") + "getcurrencies");
+            Currency = JsonConvert.DeserializeObject<List<string>>(responseBody);
+            Result = null;
+        }
+        catch (Exception ex)
+        {
+            Result = $"There was an error getting currencies: {ex.Message}";
+        }
+    }
+}
