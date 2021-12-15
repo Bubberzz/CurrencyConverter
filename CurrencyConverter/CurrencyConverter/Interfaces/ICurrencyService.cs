@@ -2,8 +2,8 @@ using System.Collections.Generic;
 
 namespace CurrencyConverter.Interfaces
 {
-    public interface ICurrencyEnum
+    public interface ICurrencyService
     {
-        List<string> GetCurrencyEnums();
+        List<string> GetCurrenciesToList();
     }
 }
