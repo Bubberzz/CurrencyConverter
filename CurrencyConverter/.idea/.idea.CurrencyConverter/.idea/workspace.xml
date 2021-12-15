@@ -6,8 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="662d212f-8a20-423e-ad9b-64b26c49e33b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter/Services/CurrencyService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter/Interfaces/ICurrencyEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/Interfaces/ICurrencyService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/ConvertControllerShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/ConvertControllerShould.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter/Controllers/ConvertController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/Controllers/ConvertController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter/Services/ConversionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/Services/ConversionService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639526805863</updated>
       <workItem from="1639526819391" duration="2068000" />
-      <workItem from="1639528940382" duration="1164000" />
+      <workItem from="1639528940382" duration="1496000" />
     </task>
     <servers />
   </component>
