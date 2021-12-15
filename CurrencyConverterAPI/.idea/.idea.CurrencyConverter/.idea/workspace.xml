@@ -5,72 +5,7 @@
     <projectFile profileName="CurrencyConverter">CurrencyConverter/CurrencyConverter.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="662d212f-8a20-423e-ad9b-64b26c49e33b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/.idea/.idea.CurrencyConverter/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/.idea/.idea.CurrencyConverter/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/.idea/.idea.CurrencyConverter/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/.idea/.idea.CurrencyConverter/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/.idea/.idea.CurrencyConverter/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/.idea/.idea.CurrencyConverterAPI/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/.idea/.idea.CurrencyConverterAPI/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/.idea/.idea.CurrencyConverterAPI/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/.idea/.idea.CurrencyConverterAPI/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI.Tests/CurrencyConverterAPI.Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI.Tests/IntegrationTests/GetConversionEndpointShould.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI.Tests/IntegrationTests/GetCurrenciesEndpointShould.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI.Tests/SetupHelper/GenerateData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI.Tests/UnitTests/ConversionServiceShould.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI.Tests/UnitTests/ConvertControllerShould.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI.Tests/UnitTests/CurrencyServiceShould.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Context/ExchangeRateDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Controllers/ConvertController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/CurrencyConverterAPI.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Entities/ExchangeRate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Entities/Rate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Enums/Currencies.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Interfaces/IConversionRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Interfaces/IConversionService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Interfaces/ICurrencyService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Repository/ConversionRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Services/ConversionService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Services/CurrencyService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CurrencyConverterAPI/CurrencyConverterAPI/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/projectSettingsUpdater.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI.Tests/CurrencyConverterAPI.Tests.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI.Tests/IntegrationTests/GetConversionEndpointShould.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI.Tests/IntegrationTests/GetCurrenciesEndpointShould.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI.Tests/SetupHelper/GenerateData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI.Tests/UnitTests/ConversionServiceShould.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI.Tests/UnitTests/ConvertControllerShould.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI.Tests/UnitTests/CurrencyServiceShould.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Context/ExchangeRateDbContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Controllers/ConvertController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/CurrencyConverterAPI.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Entities/ExchangeRate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Entities/Rate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Enums/Currencies.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Interfaces/IConversionRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Interfaces/IConversionService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Interfaces/ICurrencyService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Repository/ConversionRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Services/ConversionService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Services/CurrencyService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/Startup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverterAPI/appsettings.json" beforeDir="false" />
-    </list>
+    <list default="true" id="662d212f-8a20-423e-ad9b-64b26c49e33b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +13,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/IntegrationTests/GetCurrenciesEndpointShould.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/IntegrationTests/GetConversionEndpointShould.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/UnitTests/ConversionServiceShould.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/UnitTests/ConvertControllerShould.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/SetupHelper/GenerateData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CurrencyConverterAPI.Tests/UnitTests/CurrencyServiceShould.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
