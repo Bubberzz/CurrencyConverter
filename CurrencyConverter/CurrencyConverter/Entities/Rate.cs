@@ -1,6 +1,6 @@
 namespace CurrencyConverter.Entities
 {
-    public abstract class Rate
+    public class Rate
     {
         public int ExchangeRateId { get; set; }
         public decimal USD { get; set; }

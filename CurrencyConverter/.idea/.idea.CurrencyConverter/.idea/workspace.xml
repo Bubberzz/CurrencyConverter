@@ -6,12 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="662d212f-8a20-423e-ad9b-64b26c49e33b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/ConvertControllerShould.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter/Controllers/ConvertController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter/Entities/ExchangeRate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter/Entities/Rate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CurrencyConverter/Enums/Currencies.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter.Tests/CurrencyConverter.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/CurrencyConverter.Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyConverter/Repository/ConversionRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyConverter/CurrencyConverter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/CurrencyConverter.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639526805863</updated>
-      <workItem from="1639526819391" duration="1462000" />
+      <workItem from="1639526819391" duration="2068000" />
     </task>
     <servers />
   </component>
