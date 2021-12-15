@@ -6,9 +6,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="662d212f-8a20-423e-ad9b-64b26c49e33b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/IntegrationTests/GetConversionEndpointShould.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/IntegrationTests/GetCurrenciesEndpointShould.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/CurrencyServiceShould.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CurrencyConverter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter.Tests/CurrencyConverter.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/CurrencyConverter.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/ConversionServiceShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/ConversionServiceShould.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/ConvertControllerShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter.Tests/UnitTests/ConvertControllerShould.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter/Context/ExchangeRateDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/Context/ExchangeRateDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurrencyConverter/Controllers/ConvertController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/Controllers/ConvertController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurrencyConverter/Services/ConversionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/Services/ConversionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter/CurrencyConverter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/CurrencyConverter.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurrencyConverter/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CurrencyConverter/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +88,8 @@
       <option name="presentableId" value="Default" />
       <updated>1639526805863</updated>
       <workItem from="1639526819391" duration="2068000" />
-      <workItem from="1639528940382" duration="1496000" />
+      <workItem from="1639528940382" duration="3091000" />
+      <workItem from="1639532074663" duration="1058000" />
     </task>
     <servers />
   </component>
@@ -103,5 +113,24 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CurrencyConverter.Tests/IntegrationTests/GetCurrenciesEndpointShould.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Users\stanb\Documents\repos\CurrencyConverter\CurrencyConverter\CurrencyConverter.Tests\IntegrationTests\GetCurrenciesEndpointShould.cs" initialLine="20" containingFunctionPresentation="method 'GetCurrenciesEndpointShould_ReturnSuccess_AndCorrectContentType'">
+            <startOffsets>
+              <option value="642" />
+            </startOffsets>
+            <endOffsets>
+              <option value="679" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -23,13 +23,13 @@ namespace CurrencyConverter.Tests.UnitTests
             _currencyService = new CurrencyService();
         }
         [Fact]
-        public async Task ConvertControllerShould_ReturnCurrencies_WhenGetCurrenciesIsCalled()
+        public async Task ConvertControllerShould_ReturnCurrencies_WhenGetCurrenciesAsyncIsCalled()
         {
             // Arrange
             var controller = new ConvertController(_conversionService, _currencyService);
             
             // Act
-            var result = await controller.GetCurrencies();
+            var result = await controller.GetCurrenciesAsync();
 
             // Assert
             if (result.Result is OkObjectResult resultObject) Assert.Equal(_currencyService.GetCurrenciesToList(), resultObject.Value);

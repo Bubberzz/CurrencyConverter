@@ -6,12 +6,11 @@ namespace CurrencyConverter.Context
 {
     public class ExchangeRateDbContext : DbContext
     {
-        public DbSet<ExchangeRate> ExchangeRates { get; }
+        public DbSet<ExchangeRate> ExchangeRates { get; set; }
 
 
-        public ExchangeRateDbContext(DbContextOptions<ExchangeRateDbContext> options, DbSet<ExchangeRate> exchangeRates) : base(options)
+        public ExchangeRateDbContext(DbContextOptions<ExchangeRateDbContext> options) : base(options)
         {
-            ExchangeRates = exchangeRates;
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

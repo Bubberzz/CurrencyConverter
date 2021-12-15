@@ -1,6 +1,7 @@
 using CurrencyConverter.Context;
 using CurrencyConverter.Interfaces;
 using CurrencyConverter.Repository;
+using CurrencyConverter.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -23,7 +24,18 @@ namespace CurrencyConverter
         public void ConfigureServices(IServiceCollection services)
         {            
             services.AddDbContext<ExchangeRateDbContext>(options => options.UseInMemoryDatabase("ExchangeRates"));
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                    builder.WithOrigins("https://localhost:5001")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod());
+            });
             services.AddScoped<IConversionRepository, ConversionRepository>();
+            services.AddScoped<ICurrencyService, CurrencyService>();
+            // services.AddScoped<IConversionService, ConversionService>();
+            services.AddScoped(typeof(IConversionService), typeof(ConversionService) );
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -43,6 +55,8 @@ namespace CurrencyConverter
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            
+            app.UseCors();
 
             app.UseAuthorization();
 

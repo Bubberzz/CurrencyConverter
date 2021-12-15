@@ -32,7 +32,7 @@ namespace CurrencyConverter.Controllers
         
         [Route("/getcurrencies")]
         [HttpGet]
-        public async Task<ActionResult<List<string>>> GetCurrencies()
+        public async Task<ActionResult<List<string>>> GetCurrenciesAsync()
         {
             return Ok(await Task.Run(() => _currencyService.GetCurrenciesToList()).ConfigureAwait(false));
         }

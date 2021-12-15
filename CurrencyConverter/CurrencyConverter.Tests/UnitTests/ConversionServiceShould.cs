@@ -18,6 +18,7 @@ namespace CurrencyConverter.Tests.UnitTests
             _mockRepository = new Mock<IConversionRepository>();
             _conversionService = new ConversionService(_mockRepository.Object);
         }
+        
         [Theory]
         [InlineData(Currencies.EUR, Currencies.USD, 1)]
         public async Task ConversionServiceShould_ReturnCorrectAmount_WhenConvertIsCalled(Currencies currencyFrom, Currencies currencyTo, int amount)
