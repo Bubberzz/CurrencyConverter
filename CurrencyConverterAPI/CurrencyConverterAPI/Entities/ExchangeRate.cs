@@ -1,11 +1,9 @@
-using CurrencyConverter.Enums;
-
 namespace CurrencyConverter.Entities
 {
-    public class ExchangeRate
+    public record ExchangeRate
     {
         public int ExchangeRateId { get; set; }
-        public Currencies Base { get; set; }
+        public string BaseCurrency { get; set; }
         public Rate Rates { get; set; }
     }
 

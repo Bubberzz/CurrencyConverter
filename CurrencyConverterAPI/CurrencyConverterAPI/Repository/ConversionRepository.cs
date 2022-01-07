@@ -21,5 +21,11 @@ namespace CurrencyConverter.Repository
         {
             return await _context.ExchangeRates.ToListAsync();
         }
+
+        public async Task AddExchangeRatesAsync(ExchangeRate exchangeRate)
+        {
+            await _context.ExchangeRates.AddAsync(exchangeRate);
+            await _context.SaveChangesAsync();
+        }
     }
 }

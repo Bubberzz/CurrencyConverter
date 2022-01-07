@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using CurrencyConverter.Entities;
-using CurrencyConverter.Enums;
 
 namespace CurrencyConverter.Tests.SetupHelper
 {
@@ -13,7 +12,7 @@ namespace CurrencyConverter.Tests.SetupHelper
                 new()
                 {
                     ExchangeRateId = 1,
-                    Base = Currencies.EUR,
+                    BaseCurrency = "EUR",
                     Rates = new Rate()
                     {
                         ExchangeRateId = 1,

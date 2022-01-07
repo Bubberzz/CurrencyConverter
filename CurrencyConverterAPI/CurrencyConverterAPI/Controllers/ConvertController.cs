@@ -1,8 +1,9 @@
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using CurrencyConverter.Enums;
-using CurrencyConverter.Interfaces;
+using CurrencyConverter.CQRS.Commands;
+using CurrencyConverter.CQRS.Queries;
+using CurrencyConverter.Entities;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CurrencyConverter.Controllers
@@ -11,30 +12,36 @@ namespace CurrencyConverter.Controllers
     [ApiController]
     public class ConvertController : ControllerBase
     {
-        private readonly IConversionService _conversionService;
-        private readonly ICurrencyService _currencyService;
+        private readonly IMediator _mediator;
 
-        public ConvertController(IConversionService conversionService, ICurrencyService currencyService)
+        public ConvertController(IMediator mediator)
         {
-            _conversionService = conversionService;
-            _currencyService = currencyService;
+            _mediator = mediator;
         }
 
         [Route("/convert")]
         [HttpGet]
         public async Task<ActionResult<decimal>> GetConversionAsync(string currencyFrom, string currencyTo, int amount)
         {
-            if (!(Enum.TryParse(currencyFrom, out Currencies from) & Enum.TryParse(currencyTo, out Currencies to)))
-                return StatusCode(500);
-            var exchangeRates = await _conversionService.Convert(@from, to, amount).ConfigureAwait(false);
-            return Ok(exchangeRates);
+            return Ok(await _mediator.Send(new GetValuesQuery.GetExchangeRateAsync(currencyFrom, currencyTo, amount))
+                .ConfigureAwait(false));
         }
-        
+
         [Route("/getcurrencies")]
         [HttpGet]
         public async Task<ActionResult<List<string>>> GetCurrenciesAsync()
         {
-            return Ok(await Task.Run(() => _currencyService.GetCurrenciesToList()).ConfigureAwait(false));
+            return Ok(await _mediator.Send(new GetValuesQuery.GetCurrenciesAsync()).ConfigureAwait(false));
+        }
+
+        [Route("/add")]
+        [HttpPost]
+        public async Task<ActionResult> AddExchangeRate([FromBody] ExchangeRate exchangeRate)
+        {
+            {
+                await _mediator.Send(new AddValuesCommand.AddExchangeRateCommand(exchangeRate));
+                return StatusCode(201);
+            }
         }
     }
 }

@@ -1,7 +1,7 @@
 using CurrencyConverter.Context;
 using CurrencyConverter.Interfaces;
 using CurrencyConverter.Repository;
-using CurrencyConverter.Services;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -24,17 +24,12 @@ namespace CurrencyConverter
         public void ConfigureServices(IServiceCollection services)
         {            
             services.AddDbContext<ExchangeRateDbContext>(options => options.UseInMemoryDatabase("ExchangeRates"));
-            services.AddCors(options =>
-            {
-                options.AddDefaultPolicy(builder =>
-                    builder.WithOrigins("https://localhost:5001")
-                        .AllowAnyHeader()
-                        .AllowAnyMethod());
-            });
+            
+            services.AddMediatR(typeof(Startup));
+            
+            services.ConfigureCors();
+            
             services.AddScoped<IConversionRepository, ConversionRepository>();
-            services.AddScoped<ICurrencyService, CurrencyService>();
-            // services.AddScoped<IConversionService, ConversionService>();
-            services.AddScoped(typeof(IConversionService), typeof(ConversionService) );
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -45,9 +40,12 @@ namespace CurrencyConverter
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            app.ConfigureExceptionHandling();
+            
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                // app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CurrencyConverterAPI v1"));
             }

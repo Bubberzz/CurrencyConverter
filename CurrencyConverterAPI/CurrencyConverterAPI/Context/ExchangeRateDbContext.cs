@@ -1,5 +1,4 @@
 using CurrencyConverter.Entities;
-using CurrencyConverter.Enums;
 using Microsoft.EntityFrameworkCore;
 
 namespace CurrencyConverter.Context
@@ -19,7 +18,7 @@ namespace CurrencyConverter.Context
                 new ExchangeRate()
                 {
                     ExchangeRateId = 1,
-                    Base = Currencies.EUR,
+                    BaseCurrency = "EUR",
                 });
             
             modelBuilder.Entity<ExchangeRate>().OwnsOne(x => x.Rates).HasData(
@@ -37,7 +36,7 @@ namespace CurrencyConverter.Context
                 new ExchangeRate()
                 {
                     ExchangeRateId = 2,
-                    Base = Currencies.USD
+                    BaseCurrency = "USD"
                 });
             
             modelBuilder.Entity<ExchangeRate>().OwnsOne(x => x.Rates).HasData(
@@ -55,7 +54,7 @@ namespace CurrencyConverter.Context
                 new ExchangeRate()
                 {
                     ExchangeRateId = 3,
-                    Base = Currencies.GBP
+                    BaseCurrency = "GBP"
                 });
             
             modelBuilder.Entity<ExchangeRate>().OwnsOne(x => x.Rates).HasData(
@@ -73,7 +72,7 @@ namespace CurrencyConverter.Context
                 new ExchangeRate()
                 {
                     ExchangeRateId = 4,
-                    Base = Currencies.CAD
+                    BaseCurrency = "CAD"
                 });
             
             modelBuilder.Entity<ExchangeRate>().OwnsOne(x => x.Rates).HasData(
@@ -91,7 +90,7 @@ namespace CurrencyConverter.Context
                 new ExchangeRate()
                 {
                     ExchangeRateId = 5,
-                    Base = Currencies.AUD
+                    BaseCurrency = "AUD"
                 });
             
             modelBuilder.Entity<ExchangeRate>().OwnsOne(x => x.Rates).HasData(

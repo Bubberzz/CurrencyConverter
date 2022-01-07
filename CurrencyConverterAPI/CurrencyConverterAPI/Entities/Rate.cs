@@ -8,7 +8,5 @@ namespace CurrencyConverter.Entities
         public decimal GBP { get; set; }
         public decimal CAD { get; set; }
         public decimal AUD { get; set; }
-        
-
     }
 }
